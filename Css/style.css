@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+  height: 1000px;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+}
+.navbar .navbar-brand:hover {
+  color: #ffffff;
+}
+.navbar ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.navbar ul li a:hover {
+  color: white;
+  border-bottom: 1px solid #ffffff;
+}
+.dropdown-menu .dropdown-item {
+  color: black;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: blue;
+}
+/* ===================================== */
+/* START HOME */
+/* ===================================== */
+.home {
+  height: 100vh;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: clamp(24px, 4vw, 72px);
+  font-weight: 600;
+}
+.home .two:after {
+  content: "";
+  animation: typing 8s infinite;
+}
+@keyframes typing {
+  0%{content:"|";}
+  1%{content:"De|";}
+  2%{content:"Deve|";}
+  3%{content:"Develo|";}
+  4%{content:"Develoer|";}
+  36%{content:"Develo|";}
+  37%{content:"Deve|";}
+  38%{content:"De|";}
+  39%{content:"|";}
+  40%{content:"De|";}
+  41%{content:"Desi|";}
+  42%{content:"Design|";}
+  43%{content:"Designer|";}
+  75%{content:"Design|";}
+  76%{content:"Desi|";}
+  77%{content:"De|";}
+  78%{content:"|";}
+  79%{content:"phot|";}
+  80%{content:"photogra|";}
+  81%{content:"photographer|";}
+  97%{content:"photograp|";}
+  98%{content:"photog|";}
+  99%{content:"pho|";}
+  100%{content:"|";}
+}
+/* ===================================== */
+/* END HOME */
+/* ===================================== */
+/* ===================================== */
+/* START ABOUT */
+/* ===================================== */
+.about {
+  padding: 64px 0;
+}
+.about-card {
+  background-color: #ffffff;
+  box-shadow: 1px 6px 10px #0000003e;
+  padding: 64px 48px;
+}
+.about-card img {
+  border-radius: 5px;
+}
+.person-data p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+.person-data p span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4e4e;
+}
+.progress {
+  height: 10px !important;
+  border-radius: unset !important;
+}
+.prog span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.about-text h2 {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 500;
+  margin-bottom: 32px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.about-text h2::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about-text p {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 300;
+}
+/* ===================================== */
+/* END ABOUT */
+/* ===================================== */
+/* ===================================== */
+/* START SERVICES */
+/* ===================================== */
+.services {
+  text-align: center;
+}
+.underline {
+  position: relative;
+  padding-bottom: 16px;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #0078ff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.serv-card {
+  width: 356px;
+  background-color: #ffffff;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 6px 10px #0000004e;
+}
+.serv-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.serv-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.serv-logo {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid #0078ff;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-size: 32px;
+  transition: all 0.5s;
+}
+.serv-card:hover .serv-logo {
+  background-color: #0078ff;
+  color: #ffffff;
+  border: 10px solid #f5f5f5;
+}
+
+/* ================= */
+.serv-counter {
+  margin: 64px 0 0;
+  background: linear-gradient(#0077ffc5, #0077ffc5), url(../img/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 430px;
+  padding: 64px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serv-counter .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.serv-counter .items .item {
+  width: 250px;
+  text-align: center;
+  color: #ffffff;
+}
+.serv-counter .items .item span {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.serv-counter .items .item p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.serv-counter .items .item .item-logo {
+  background-color: transparent;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  border: 10px solid #ffffff;
+  margin: 0 auto 32px;
+}
+/* ===================================== */
+/* END SERVICES */
+/* ===================================== */
+/* ===================================== */
+/* END portfolio */
+/* ===================================== */
+.portfolio {
+  padding: 64px 0px;
+  text-align: center;
+}
+.portfolio h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.portfolio p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.portfolio .underline {
+  position: relative;
+  padding-bottom: 16px;
+}
+.portfolio-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.portfolio-card {
+  width: 415px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.portfolio-card .portfolio-card-img {
+  width: 100%;
+  overflow: hidden;
+}
+.portfolio-card .portfolio-card-img img {
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+.portfolio-card:hover .portfolio-card-img img {
+  transform: scale(1.2);
+}
+.portfolio-card .portfolio-card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px 16px;
+  text-align: start;
+}
+.portfolio-card .portfolio-card-text .left-side h4 {
+  font-size: 19px;
+  font-weight: 500;
+}
+.portfolio-card .portfolio-card-text .left-side p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #0078ff;
+}
+.portfolio-card .portfolio-card-text .left-side span {
+  color: #4e4e4e;
+}
+.portfolio-card .portfolio-card-text .right-side {
+  border: 3px solid #0078ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0078ff;
+  font-size: 20px;
+}
+
+/* ===================================== */
+/* END portfolio */
+/* ===================================== */
+
+/* ===================================== */
+/* START  CAROUSEL */
+/* ===================================== */
+.testimonial {
+  background: linear-gradient(#0077ffc5, #0077ffc5), url(../img/overlay-bg.jpg);
+  padding: 64px;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.testimonial .carousel-item {
+  padding: 60px;
+  color: #ffffff;
+}
+.testimonial .carousel-item img {
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.testimonial .carousel-item h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.testimonial .carousel-item p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ===================================== */
+/* END CAROUSEL */
+/* ===================================== */
+/* ===================================== */
+/* START BLOG */
+/* ===================================== */
+.blog {
+  padding: 64px 0px;
+  text-align: center;
+}
+.blog h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.blog p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.blog .underline {
+  position: relative;
+}
+.blog .blog-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.blog .blog-cards .blog-card {
+  text-align: start;
+  width: 415px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #4e4e4e5f;
+  overflow: hidden;
+  box-shadow: 1px 6px 10px #0000003d;
+}
+.blog .blog-cards .blog-card .card-img {
+  position: relative;
+}
+.blog .blog-cards .blog-card .card-img .upper {
+  position: absolute;
+  background-color: #0078ff;
+  padding: 5px 12px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blog .blog-cards .blog-card .card-img img {
+  width: 100%;
+}
+.blog .blog-cards .blog-card .card-text {
+  padding: 16px;
+}
+.blog .blog-cards .blog-card .card-text h3 {
+  font-size: 21px;
+  font-weight: 500;
+}
+.blog .blog-cards .blog-card .card-text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.blog .blog-cards .blog-card .card-bottom {
+  border-top: 1px solid #4e4e4e5f;
+  background-color: #f8f8f8;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .blog-cards .blog-card .card-bottom .left-side {
+  display: flex;
+  align-items: center;
+}
+
+.blog .blog-cards .blog-card .card-bottom .left-side img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.blog .blog-cards .blog-card .card-bottom .left-side p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0px;
+}
+.blog .blog-cards .blog-card .card-bottom .left-side p:hover {
+  color: #0078ff;
+}
+.blog .blog-cards .blog-card .card-bottom .right-side {
+  font-size: 16px;
+  font-weight: 400px;
+  color: #4e4e4e;
+}
+/* ===================================== */
+/* END BLOG */
+/* ===================================== */
+/* ===================================== */
+/* START CONTACT */
+/* ===================================== */
+.contact {
+  background: linear-gradient(#0077ffc5, #0077ffc5), url(../img/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 64px 0;
+}
+.contact .contact-info {
+  background-color: #fff;
+  padding: 48px;
+}
+.contact h2 {
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 16px;
+}
+.contact h2::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: #0078ff;
+  bottom: 0;
+}
+.contact p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+
+.contact input,
+.contact textarea {
+  border-radius: unset;
+  padding: 10px;
+}
+.contact textarea {
+  height: 200px;
+  margin-bottom: 32px;
+}
+.contact .btns {
+  text-align: center;
+}
+.contact .btns button {
+  padding: 16px 48px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0078ff;
+  border: none;
+}
+.contact .btns button:hover {
+  background-color: #0077ffce;
+}
+.contact h6 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.contact h6 img {
+  width: 16px;
+  margin-right: 8px;
+}
+.contact .icons {
+  display: flex;
+}
+.contact .icons .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+  border: 2px solid #0078ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.contact .icons .icon svg {
+  width: 20px;
+  height: 20px;
+}
+.contact .icons .icon:hover {
+  background-color: #0078ff;
+}
+.contact .icons .icon:hover svg path {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+.contact .icons .icon img {
+  width: 20px;
+  height: 20px;
+}
+/* ===================================== */
+/* END CONTACT */
+/* ===================================== */
+/* ===================================== */
+/* START FOOTER */
+/* ===================================== */
+footer {
+  background-color: #0078ff;
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer p {
+  margin-bottom: 0;
+}
+/* ===================================== */
+/* END FOOTER */
+/* ===================================== */
+@media (max-width: 600px) {
+  .about-card {
+    padding: 20px;
+  }
+}
